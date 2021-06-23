@@ -1,0 +1,66 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  width: 450px;
+  font-size: 14px;
+  padding: 0px 4px 0px 0px;
+  li {
+    list-style: none;
+  }
+  // animation: 250ms ease-in-out 0s 1 fadeIn;
+}
+
+.search {
+  display: flex;
+
+  #search-input {
+    width: 100%;
+    padding: 4px;
+    margin: 4px auto;
+    border: 1px solid #888888;
+  
+    &:focus {
+      outline: none;
+      border-color: #3399cc;
+    }
+  }
+}
+
+
+#bookmark-list {
+  margin-top: 4px;
+}
+
+.bookmark-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  &:hover {
+    background-color: #eee;
+  }
+
+  .favicon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  .title {
+    flex: 1;
+    line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

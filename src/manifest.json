@@ -1,0 +1,23 @@
+{
+  "name": "Squirrel House",
+  "version": "0.1",
+  "description": "Squirrel House",
+  "manifest_version": 2,
+  "permissions": ["tabs", "https://s2.googleusercontent.com/s2/favicons"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "images/favicon32.png",
+      "48": "images/favicon48.png",
+      "128": "images/favicon128.png"
+    }
+  },
+  "background": {
+    "scripts": [ "background.js" ]
+ },
+ "options_page": "options.html",
+  "icons": {
+    "128": "images/favicon128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
